@@ -1,5 +1,5 @@
 echo $PSCommandPath
-(Get-Content $PSCommandPath) | Select-Object -Skip $MyInvocation.ScriptLineNumber >> $PROFILE
+(Get-Content $PSCommandPath | Select-Object -Skip $MyInvocation.ScriptLineNumber) >> $PROFILE
 
 $alias_file_content = @"
 "foreach","ForEach-Object","","ReadOnly, AllScope"
