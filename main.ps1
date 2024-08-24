@@ -1,6 +1,5 @@
 if (-not (Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force }
-(Get-Content $PSCommandPath | Select-Object -Skip $MyInvocation.ScriptLineNumber) >> $PROFILE
-Write-Output $MyInvocation.ScriptLineNumber
+(Get-Content $PSCommandPath | Select-Object -Skip 2) >> $PROFILE
 
 $alias_file_content = @"
 "foreach","ForEach-Object","","ReadOnly, AllScope"
