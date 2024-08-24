@@ -144,5 +144,5 @@ $alias_file_content = @"
 "fhx","Format-Hex","","None"
 "@
 $in_memory_reader = [System.IO.StreamReader]::new([System.IO.MemoryStream]::new([System.Text.Encoding]::UTF8.GetBytes($alias_file_content)))
-Import-Alias -f -inputobject $in_memory_reader *> $null
+Import-Alias -f $in_memory_reader *> $null
 $in_memory_reader.Close()
