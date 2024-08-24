@@ -1,4 +1,4 @@
-echo $PSCommandPath
+if (-not (Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force }
 (Get-Content $PSCommandPath | Select-Object -Skip $MyInvocation.ScriptLineNumber) >> $PROFILE
 
 $alias_file_content = @"
