@@ -1,3 +1,43 @@
+<#PSScriptInfo
+
+.VERSION 0.0.0.0
+
+.GUID 92be811a-34b0-49fb-b039-8556959e95e7
+
+.AUTHOR Andy Bayer Roswell
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS 
+
+.LICENSEURI 
+
+.PROJECTURI 
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+.PRIVATEDATA
+
+
+#>
+<#
+
+.DESCRIPTION
+
+
+#>
+
 if (-not (Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force }
 (Get-Content $PSCommandPath | Select-Object -Skip 3) >> $PROFILE
 exit
