@@ -14,7 +14,7 @@
 
 .LICENSEURI 
 
-.PROJECTURI 
+.PROJECTURI https://github.com/AndyBRoswell/Import-PowerShellAliasesFromWindows
 
 .ICONURI 
 
@@ -34,7 +34,9 @@
 <#
 
 .DESCRIPTION
+Import PowerShell aliases from Windows to Linux, macOS, etc. to keep cross-platform consistency of aliases.
 
+This will make aliases like ls, cp, mv, rm, cat, man, mount, ps... available in PowerShell on Linux, macOS, etc.
 
 #>
 
