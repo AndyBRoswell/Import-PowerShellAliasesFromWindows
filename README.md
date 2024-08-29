@@ -13,7 +13,6 @@ git clone https://github.com/AndyBRoswell/Import-PowerShellAliasesFromWindows
 
 Run PowerShell. Change directory to the cloned repository and run
 ```powershell
-./main.ps1
+./Import-PowerShellAliasesFromWindows.ps1
 ```
-
 Then the aliases will be added to your PowerShell profile `$PROFILE`. These aliases are permanent since every time PowerShell starts, `$PROFILE` is loaded.
