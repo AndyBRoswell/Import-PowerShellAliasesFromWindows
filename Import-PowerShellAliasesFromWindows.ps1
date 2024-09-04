@@ -40,7 +40,7 @@ This will make aliases like ls, cp, mv, rm, cat, man, mount, ps... available in 
 #>
 
 if (-not (Test-Path $PROFILE)) { New-Item -ItemType File -Path $PROFILE -Force }
-(Get-Content $PSCommandPath | Select-Object -Skip 3) >> $PROFILE
+(Get-Content $PSCommandPath | Select-Object -Skip 44) >> $PROFILE
 exit
 
 set-alias -Force -Name:"foreach" -Value:"ForEach-Object" -Description:"" -Option:"ReadOnly, AllScope"
